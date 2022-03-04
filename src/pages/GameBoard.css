@@ -104,6 +104,51 @@
   font-weight: 400;
 }
 
-@media (max-width: 995px) {
-  
+@media (max-width: 1064px) {
+  .header-text {
+    font-size: 36px;
+    line-height: 44.7px;
+  }
+  .gameboard-item:nth-of-type(5), .gameboard-item:nth-of-type(10), .gameboard-item:nth-of-type(15) {
+    margin-right: 64px;
+  }
+  /* .gameboard-item:nth-of-type(4), .gameboard-item:nth-of-type(8), .gameboard-item:nth-of-type(12), .gameboard-item:nth-of-type(16) {
+    margin-right: 0px;
+  } */
+}
+
+@media (max-width: 664px) {
+  .header-text {
+    font-size: 12px;
+    line-height: 14.9px;
+  }
+  .header-left {
+    flex-direction: column;
+  }
+  .header-logo {
+    width: 69px;
+  }
+  .score-text {
+    font-size: 22px;
+    line-height: 14.9px;
+  }
+  .score-number-text {
+    font-size: 22px;
+    line-height: 12.42px;
+  }
+  .score-number-number {
+    font-size: 22px;
+    line-height: 14.9px;    
+  }
+}
+
+@media (max-width: 320px) {
+  .gameboard-item {
+    margin-right: 0px;
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .gameboard-item:nth-of-type(5), .gameboard-item:nth-of-type(10), .gameboard-item:nth-of-type(15) {
+    margin-right: 0px;
+  }
 }

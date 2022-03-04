@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../img/pakeball.png';
 
-const GameBoardHeader = ({ localUsername }) => {
+const GameBoardHeader = ({ localUsername, gameName }) => {
   return (
     <header className="gameboard-header">
       <div className="container header-container">
@@ -10,7 +10,7 @@ const GameBoardHeader = ({ localUsername }) => {
           <h1 className="header-text">POKEMON MEMORY</h1>
         </div>
         <div className="score">
-          <p className="score-text">{localUsername}</p>  
+          <p className="score-text">{gameName}</p>  
           <div className="score-number">
             <span className="score-number-text">score</span>
             <span className="score-number-number">0</span>

@@ -20,24 +20,10 @@ import pok15 from '../img/Vaporeon.png';
 import pok16 from '../img/Zapdos.png';
 
 const GameBoardTable = () => {
+  
   return (
     <div className="gameboard-table container">
-      <GameBoardItem imageUrl={pok1}/>
-      <GameBoardItem imageUrl={pok2}/>
-      <GameBoardItem imageUrl={pok3}/>
-      <GameBoardItem imageUrl={pok4}/>
-      <GameBoardItem imageUrl={pok5}/>
-      <GameBoardItem imageUrl={pok6}/>
-      <GameBoardItem imageUrl={pok7}/>
-      <GameBoardItem imageUrl={pok8}/>
-      <GameBoardItem imageUrl={pok9}/>
-      <GameBoardItem imageUrl={pok10}/>
-      <GameBoardItem imageUrl={pok11}/>
-      <GameBoardItem imageUrl={pok12}/>
-      <GameBoardItem imageUrl={pok13}/>
-      <GameBoardItem imageUrl={pok14}/>
-      <GameBoardItem imageUrl={pok15}/>
-      <GameBoardItem imageUrl={pok16}/>
+      
     </div>
   )
 };

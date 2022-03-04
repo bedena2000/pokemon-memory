@@ -4,10 +4,10 @@ import './GameBoard.css';
 import GameBoardHeader from './GameBoardHeader';
 import GameBoardTable from './GameBoardTable';
 
-const GameBoard = ({ localUsername }) => {
+const GameBoard = ({ localUsername, gameName }) => {
   return (
     <div className="gameboard">
-      <GameBoardHeader localUsername={localUsername}/>
+      <GameBoardHeader localUsername={localUsername} gameName={gameName}/>
       <GameBoardTable />  
     </div>
   )
