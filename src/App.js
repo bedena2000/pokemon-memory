@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import './main.css';
+
+// Pages
+import WelcomeMenu from './pages/WelcomeMenu';
+import GameBoard from './pages/GameBoard';
 
 function App() {
+  const [welcomeMenu, setWelcomeMenu] = useState(true);
+  const [gameMenu, setGameMenu] = useState(false);
+  const [username, setUsername] = useState('');
+  const welcomeMenuShow = () => {
+    setWelcomeMenu(false);
+    setGameMenu(true);
+    localUsername = localStorage.getItem("username");
+  }
+  let localUsername = '';
+  const getUserName = (value) => {
+    localStorage.setItem("username", value);
+    
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {
+        welcomeMenu ? <WelcomeMenu gameStarter={welcomeMenuShow} getUserName={getUserName}/> : null
+      }
+      {
+        gameMenu ? <GameBoard localUsername={localUsername}/> : null
+      }
     </div>
   );
 }

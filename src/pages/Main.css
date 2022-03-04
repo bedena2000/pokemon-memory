@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;700&family=Rampart+One&family=Righteous&display=swap');
+
+
+.welcome-menu {
+  width: 100%;
+  padding: 40px;
+  position: absolute;
+  background-color: #E53737;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.welcome-text {
+  font-family: 'Rampart One', cursive;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 104.26px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 727px;
+  margin: 0 auto;
+  margin-top: 110px;
+  transition: all .3s ease-in;
+  animation-name: welcomeTextAnimation;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes welcomeTextAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.welcome-board {
+  background-color: #C4C4C4;
+  box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  width: 518px;
+  margin: 0 auto;
+  margin-top: 37px;
+  padding: 52px 72px;
+  transition: all .3s ease;
+  animation-name: welcomeBoardAnimation;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes welcomeBoardAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.username {
+  font-family: 'Righteous', cursive;
+  font-size: 36px;
+  line-height: 44.7px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.username-input {
+  outline: 0;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 4px solid black;
+  margin-top: 20px;
+  font-size: 36px;
+  font-weight: 400;
+  font-family: 'Righteous', cursive;
+  color: crimson;
+  padding-left: 4px;
+}
+
+.username-btn {
+  transition: all .3s ease;
+  width: 152px;
+  background-color: #696569;
+  border-radius: 5px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  font-family: 'Righteous', sans-serif;
+  font-size: 24px;
+  line-height: 29.8px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  text-align: center;
+  display: block;
+  margin-top: 32px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid #696569;
+}
+
+.username-btn:hover {
+  background-color: crimson;
+  color: black;
+}
+
+.warning {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 30px;
+  color: red;
+  font-family: 'Righteous', sans-serif;
+}
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+  .welcome-text {
+    margin-top: 40px;
+    font-size: 48px;
+    line-height: 69.5px;
+    width: 100%;
+  }
+  .welcome-board {
+    width: 423px;
+  }
+  .username {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 500px) {
+  .welcome-board {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .welcome-text {
+    font-size: 36px;
+    line-height: 52.13px;
+  }
+  .username {
+    font-size: 24px;
+    line-height: 29.8px;
+  }
+  .username-btn {
+    width: 95px;
+  }
+}
