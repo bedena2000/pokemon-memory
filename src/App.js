@@ -19,16 +19,16 @@ function App() {
     localStorage.setItem("username", value);
     setUsername(value);
   };
-  const setUiUsername = () => {
-    console.log(username);
-  };
+  // const setUiUsername = () => {
+  //   console.log(username);
+  // };
   return (
     <div className="App">
       {
         welcomeMenu ? <WelcomeMenu gameStarter={welcomeMenuShow} getUserName={getUserName}/> : null
       }
       {
-        setUiUsername(),
+        
         gameMenu ? <GameBoard localUsername={localUsername} gameName={username}/> : null
       }
     </div>

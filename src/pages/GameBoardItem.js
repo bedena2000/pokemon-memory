@@ -1,10 +1,12 @@
 import React from 'react';
 
-const GameBoardItem = ({imageUrl}) => {
+const GameBoardItem = ({imageUrl, pokemonName, checkClicked}) => {
   return (
-    <div className="gameboard-item">
+    <div className="gameboard-item" onClick={() => {
+      checkClicked(pokemonName);
+    }}>
         <img src={imageUrl} alt="" className="gameboard-item-img" />  
-        <p className={`gameboard-item-title`}>Blastoise</p>
+        <p className={`gameboard-item-title`}>{pokemonName}</p>
     </div>
   )  
 };

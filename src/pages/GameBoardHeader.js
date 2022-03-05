@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../img/pakeball.png';
 
-const GameBoardHeader = ({ localUsername, gameName }) => {
+const GameBoardHeader = ({ localUsername, gameName, wrongAnswerDisplay }) => {
   return (
     <header className="gameboard-header">
       <div className="container header-container">
@@ -13,7 +13,7 @@ const GameBoardHeader = ({ localUsername, gameName }) => {
           <p className="score-text">{gameName}</p>  
           <div className="score-number">
             <span className="score-number-text">score</span>
-            <span className="score-number-number">0</span>
+            <span className="score-number-number">{wrongAnswerDisplay}</span>
           </div>
         </div>
       </div>
